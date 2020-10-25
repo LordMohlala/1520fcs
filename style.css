@@ -1,0 +1,445 @@
+html
+{
+  scroll-behavior: smooth;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(images/AngleIron.jpeg);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/*------Navigation------*/
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 30px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover
+{
+    color: goldenrod;
+}
+.navbar-nav
+{
+    background: white;
+}
+.navbar-toggler
+{
+    border: none !important;
+}
+.nav-link
+{
+    color: #555;
+    font-weight: 600;
+    font-size: 16px;
+}
+/*-----Slider------*/
+#slider
+{
+    width: 100%;
+}
+.carousel-caption
+{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+}
+.carousel-caption h5
+{
+color: #fff;
+font-size: 42px;
+}
+/*-------About-------*/
+#about
+{
+    color: goldenrod;
+    background-size: cover;
+    background-position: center;
+    color: goldenrod !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#about h2
+{
+    text-align: center;
+    color: goldenrod !important;
+}
+#about h2::after
+{
+    content: '';
+    background: goldenrod;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.about
+{
+    margin-top: 40px;
+}
+
+.about-content
+{
+    padding-top: 20px;
+}
+.post
+{
+    padding-top: 20px;
+}
+#more
+{
+    display: none;
+}
+/*-----Directors & Incoporators-----*/
+.profile-pic
+{
+    margin-top: 25px;
+}
+.profile-pic .img-box
+{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.profile-pic .img-box
+{
+    filter: grayscale(1);
+}
+.profile-pic .img-box
+{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.profile-pic h1
+{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    color: goldenrod !important;
+}
+.profile-pic h1
+{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+#team .fa
+{
+    height: 25px;
+    width: 25px;
+    color: #007bff !important;
+    background: #fff;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+/*---Services----*/
+#services
+{
+    background-image: linear-gradient(rgba(0,0,0,0,8),rgba(0,0,0,0,8)),url(images/AngleIron.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: goldenrod !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#services h1
+{
+    text-align: center;
+    color: goldenrod !important;
+}
+#services h1::after
+{
+    content: '';
+    background: goldenrod;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.services
+{
+    margin-top: 40px;
+}
+.icon
+{
+font-size: 4opx;
+margin: 20px auto;
+padding: 20px;
+height: 80px;
+width: 80px;
+border: 1px solid goldenrod;
+border-radius: 50%;
+}
+#services p{
+    font-size: 14px;
+    margin-top: 20px;
+    color: goldenrod;
+}
+.services .col-md-4:hover
+{
+    background: black;
+    cursor: pointer;
+    transition: 0.7s;
+}
+/*-------CATALOGUE------*/
+#catalogue
+{
+    background-image: linear-gradient(rgba(0,0,0,0,8),rgba(0,0,0,0,8)),url(images/AngleIron.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: goldenrod !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#catalogue h1
+{
+    text-align: center;
+    color: goldenrod !important;
+}
+#catalogue h1::after
+{
+    content: '';
+    background: goldenrod;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.catalogue
+{
+    margin-top: 40px;
+}
+.card {
+    box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: goldenrod;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .img-box
+  {
+    opacity: 1;
+    display: block;
+    position: relative;
+  }
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+.contact-title
+{
+  margin-top: 100px;
+  color: goldenrod;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+}
+.contact-title h3
+{
+  font-size: 32px;
+  line-height: 1opx;
+}
+.contact-title h4
+{
+  font-size: 16px;
+}
+form
+{
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+.form-control
+{
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+input
+{
+  height: 45px;
+}
+form .submit
+{
+  background: green;
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+form .submit:hover
+{
+  background-color: goldenrod;
+  cursor: pointer;
+}
+
+  #follow .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .gotobtn
+  {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: goldenrod;
+    bottom: 40px;
+    right: 50px;
+
+    text-decoration: none;
+    text-align: center;line-height: 50px;
+
+  }
+/*----Footer-----*/
+#footer
+{
+    background: black;
+    color: goldenrod;
+    padding: 12px;
+}
