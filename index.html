@@ -9,6 +9,9 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
 </head>
 
 <body>
@@ -244,7 +247,7 @@
             </div>
 
             <div class="contact-form">
-              <form id="contact-form" method="post" action="contact-form-handler.php">
+              <form action="https://formspree.io/f/mknpbrgq" method="POST" id="my-form">
                 <input name="name" type="text" class="form-control" placeholder="Name" required>
                 <br>
                 <input name="email" type="email" class="form-control" placeholder="Your email" required>
@@ -255,7 +258,9 @@
                 <input type="submit" class="form-control submit" value="SEND MESSAGE">
 
               </form>
+              <div id="status"></div>
             </div>
+
                <!---Contact Us-->
         <section id="contact">
           <div class="container">
@@ -277,6 +282,7 @@
 </body>
 
 </html>
+<script src="./main.js"></script>
 <script>
   function read_more_less() {
     var dots = document.getElementById('dots');

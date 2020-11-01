@@ -413,10 +413,12 @@ form .submit:hover
 
   #follow .fa {
     padding: 20px;
+    padding-left: 15%;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
+    margin-right: 3em;
   }
   
   /* Add a hover effect if you want */
@@ -436,6 +438,37 @@ form .submit:hover
     text-align: center;line-height: 50px;
 
   }
+  #status
+{
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+
+}
+#status.success
+{
+    background-color: green;
+    animation: status 4s ease forwards;
+}
+#status.error
+{
+    background-color: red;
+    animation: status 4s ease forwards;
+}
+@keyframes status
+{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
 /*----Footer-----*/
 #footer
 {
