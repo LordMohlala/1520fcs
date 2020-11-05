@@ -158,7 +158,66 @@ font-size: 42px;
     padding: 4px;
     border-radius: 50%;
 }
-
+.container .box
+{
+  width: 600px;
+  margin: 120px auto;
+  display: table;
+}
+.container .box .box-row
+{
+  display: table-row;
+}
+.container .box .box-row .box-cell
+{
+  display: table-cell;
+  width: 50%;
+  padding: 20px;
+}
+.box h7
+{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 18px;
+  color: goldenrod !important;
+}
+.box h7
+{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 18px;
+  color: goldenrod !important;
+}
+@media screen and (max-width:1250px)
+{
+  .container .box .box-row ul li
+  {
+    padding: 0px;
+    margin: 0px;
+  }
+  .container .box .box-row ul li
+  {
+    list-style: none;
+    float: left;
+    width: 20%;
+    height: 300px;
+  }
+  .container .box .box-row 
+  {
+    width: 40px;
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width:600px)
+{
+  .container .box .box-row ul li 
+  {
+    width: auto;
+    padding: 0px;
+  }
+}
 /*---Services----*/
 #services
 {
@@ -411,14 +470,20 @@ form .submit:hover
   cursor: pointer;
 }
 
-  #follow .fa {
-    padding: 20px;
-    padding-left: 15%;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin-right: 3em;
+  .follow ul
+  {
+position: absolute;
+top: 50%;
+left: 50%;
+padding: 0;
+margin: 0;
+transform: translate(-50%, -50%);
+display: flex;
+  }
+  .follow ul li
+  {
+    list-style: none;
+    margin: 0 15px;
   }
   
   /* Add a hover effect if you want */
